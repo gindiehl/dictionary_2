@@ -18,7 +18,7 @@ get('/words') do
   @words = Word.all()
   erb(:words)
 end
-#  push word form "form action" to words array
+#  push word "form action" to words array
 post('/words') do
   new_word = params.fetch('new_word')
   Word.new(new_word).save()
