@@ -15,7 +15,7 @@ get('/words/new') do
 end
 
 get('/words') do
-    @words = Word.all()
+  @words = Word.all()
   erb(:words)
 end
 #  push word form "form action" to words array

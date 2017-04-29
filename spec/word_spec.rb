@@ -61,5 +61,4 @@ describe("Word") do
       expect(new_term.term()).to(eq([new_definition]))
     end
   end
-
 end

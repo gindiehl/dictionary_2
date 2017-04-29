@@ -51,5 +51,4 @@ describe("Definition") do
       expect(Definition.find(new_definition.id())).to(eq(new_definition))
     end
   end
-
 end
