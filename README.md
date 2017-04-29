@@ -1,13 +1,12 @@
-# <!--PROJECT NAME HERE-->
-
-<!--PROJECT DESCRIPTION HERE-->
+# Dictionary
+This Ruby app allows a user to enter, define, and store words.
 
 ### Prerequisites
 
 Web browser with ES6 compatibility
 Examples: Chrome, Safari
 
-Ruby <!--VERSION HERE-->
+Ruby 2.3.1
 Bundler
 
 ### Installing
@@ -28,12 +27,14 @@ Installation is quick and easy! First you can open this link <!--HEROKU LINK HER
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
-<!--SPECS GO HERE-->
- 
+Program receives and stores user input for new word. |"arch"| |"arch"|
+Program receives and stores user input for definition. |"arch"| |"a curved symmetrical structure spanning an opening and typically supporting the weight of a bridge, roof, or wall above it."|
+
+
 ## Authors
 
-* <!--YOUR NAME HERE-->
+* jin camou
 
 ## License
 
-Copyright © 2017 <!--YOUR NAME HERE-->
+Copyright © 2017 jin camou

@@ -1,0 +1,10 @@
+<h1>THIS IS YOUR LIST OF WORDS</h1>
+
+<h3>Click on a word to see all your definitions for that word:</h3>
+<ul>
+  <% @words.each() do |word| %>
+    <li><a href="/word/<%= word.id() %>"><%= word.new_word() %></a></li>
+  <% end %>
+</ul>
+<a href="/words/new">Add a new word</a>
+<a href="/">Return to main page</a>
