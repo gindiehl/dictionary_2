@@ -38,13 +38,9 @@ describe('adding definitions to a word', {:type => :feature}) do
   it('allows a user to add a definition to a word') do
     test_word = Word.new({:new_word => "cat", :id => 1 })
     test_word.save()
-    visit("/definitions")
-    fill_in("define_word", {:with => "a feline mammal"})
+    visit("/words/:id/definitions/new")
+    fill_in('define_word', :with => "a feline mammal")
     click_button("Add Definition")
-    visit("/word")
     expect(page).to have_content("Here are your definitions for this word:")
   end
 end
-
-
-  # fill_in("definition", :with => "a curved symmetrical structure spanning an opening and typically supporting the weight of a bridge, roof, or wall above it.")

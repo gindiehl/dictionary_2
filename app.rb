@@ -31,19 +31,19 @@ get('/word/:id') do
   erb(:word)
 end
 
-get('/definition_form') do
-  erb(:definition_form)
-end
+# get('/definition_form') do
+#   erb(:definition_form)
+# end
 
-get('/definition_form') do
-  @definition = Definition.all()
-  erb(:word)
-end
+# get('/definition_form') do
+#   @definition = Definition.all()
+#   erb(:word)
+# end
 
-get('/definitions/:id') do
-  @definition = Definition.find(params.fetch('id').to_i())
-  erb(:definition)
-end
+# get('/definitions/:id') do
+#   @definition = Definition.find(params.fetch('id').to_i())
+#   erb(:definition)
+# end
 
 get('/words/:id/definitions/new') do
   @word = Word.find(params.fetch('id').to_i())
