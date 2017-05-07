@@ -1,0 +1,52 @@
+html {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: white;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 45%;
+}
+
+a {
+  color:#EE7E8C;
+  font-style: oblique;
+  font-size: 1.5em;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+li {
+font-family: 'Share Tech Mono', monospace;
+font-size: 2em;
+}
+
+h1 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #a436b2;
+  font-size: 3em;
+}
+
+h3 {
+  color: #a436b2;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.5em;
+}
+
+.btn:hover {
+  background-color: white;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.5em;
+  color:#EE7E8C;
+  font-style: oblique;
+}
+
+p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2em;
+}
+
+form, #new_word {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.5em;
+}

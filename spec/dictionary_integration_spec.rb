@@ -34,13 +34,21 @@ describe('seeing definitions for a single word', {:type => :feature}) do
   end
 end
 
-describe('adding definitions to a word', {:type => :feature}) do
+describe('the add definition path', {:type => :feature}) do
   it('allows a user to add a definition to a word') do
     test_word = Word.new({:new_word => "cat", :id => 1 })
     test_word.save()
-    visit("/words/:id/definitions/new")
-    fill_in('define_word', :with => "a feline mammal")
-    click_button("Add Definition")
+    visit("/")
+    click_link("Add a new word")
+    fill_in("new_word", :with => "cat")
+    click_button("Add Word")
+    expect(page).to have_content("Click on a word to see all your definitions for that word:")
+    click_on("cat")
     expect(page).to have_content("Here are your definitions for this word:")
+    click_on("Add a new definition")
+    expect(page).to have_content("Add a definition to cat")
+    fill_in("define_word", :with => "a feline mammal")
+    click_button("Add Definition")
+    expect(page).to have_content("Click on a word to see all your definitions for that word:")
   end
 end

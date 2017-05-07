@@ -18,32 +18,18 @@ get('/words') do
   @words = Word.all()
   erb(:words)
 end
-#  push word "form action" to words array
+
 post('/words') do
   new_word = params.fetch('new_word')
   Word.new(new_word).save()
   @words = Word.all()
   erb(:words)
 end
-#click on word to route to page of definitions for that word
+
 get('/word/:id') do
   @word = Word.find(params.fetch('id').to_i())
   erb(:word)
 end
-
-# get('/definition_form') do
-#   erb(:definition_form)
-# end
-
-# get('/definition_form') do
-#   @definition = Definition.all()
-#   erb(:word)
-# end
-
-# get('/definitions/:id') do
-#   @definition = Definition.find(params.fetch('id').to_i())
-#   erb(:definition)
-# end
 
 get('/words/:id/definitions/new') do
   @word = Word.find(params.fetch('id').to_i())

@@ -1,13 +1,12 @@
 <h3>Here are your definitions for this word:</h3>
-<ul>
+<ol>
   <% @word.term().each() do |term| %>
   <li>
     <%= term.define_word() %>
   </li>
-  <!-- <li><a href="/definitions/<%= term.id() %>"><%= term.define_word() %></a></li> -->
-  <% end %>
-</ul>
+    <% end %>
+</ol>
 
-<a href="/words/<%= @word.id()%>/definitions/new">Add a new definition</a>
-<a href="/">Return to Main Page</a>
-<a href="/words">Go back to your list of words</a>
+<a href="/words/<%= @word.id()%>/definitions/new">Add a new definition</a><br>
+<a href="/">Return to Main Page</a><br>
+<a href="/words">Go back to your list of words</a><br>

@@ -33,7 +33,7 @@ Program receives and stores user input for definition. |"arch"| |"a curved symme
 
 ## Authors
 
-* jin camou
+_jincamou@gmail.com_
 
 ## License
 
